@@ -1,0 +1,26 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Ghost.png" type="Texture" id=1]
+[ext_resource path="res://Transition.tres" type="Animation" id=2]
+
+[node name="MenuTransition" type="CanvasLayer"]
+pause_mode = 2
+layer = 30
+
+[node name="BG" type="ColorRect" parent="."]
+margin_left = 1024.0
+margin_right = 2048.0
+margin_bottom = 600.0
+color = Color( 0, 0, 0, 1 )
+__meta__ = {
+"_edit_use_anchors_": false
+}
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+playback_speed = 1.5
+anims/Transition = ExtResource( 2 )
+
+[node name="Ghost" type="Sprite" parent="."]
+position = Vector2( 1152, 296 )
+scale = Vector2( 0.25, 0.25 )
+texture = ExtResource( 1 )

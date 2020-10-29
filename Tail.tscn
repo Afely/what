@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Tail.gd" type="Script" id=1]
+[ext_resource path="res://Circle.png" type="Texture" id=2]
+
+[node name="Tail" type="Sprite"]
+light_mask = 0
+scale = Vector2( 0.046875, 0.046875 )
+z_index = 2
+texture = ExtResource( 2 )
+script = ExtResource( 1 )

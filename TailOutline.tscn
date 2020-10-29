@@ -1,0 +1,11 @@
+[gd_scene load_steps=3 format=2]
+
+[ext_resource path="res://Circle.png" type="Texture" id=1]
+[ext_resource path="res://Tail.gd" type="Script" id=2]
+
+[node name="TailOutline" type="Sprite"]
+modulate = Color( 0, 0, 0, 1 )
+scale = Vector2( 0.055, 0.055 )
+z_index = 1
+texture = ExtResource( 1 )
+script = ExtResource( 2 )
